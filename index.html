@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.1">
+    <title>Jazmin Mereles, Recu PP</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
+
+<body>
+    <header>
+    <div>
+        Filtrar por:
+        <select id = "select-vehiculos" class  = "elemento-datos">
+            <option value = "Todos">Todos</option>
+            <option value = "Auto">Auto</option>
+            <option value = "Camion">Camión</option>
+        </select>
+    </div>
+    <div id = "edad-promedio" >
+        Calcular Velocidad Max Promedio: 
+        <input type = "text" id = "calcular-velMax" class = "elemento-datos" readonly>
+        <button class = "boton" id = "btn-calcular-velMax">Calcular</button>
+    </div>
+    </header>
+    <main>
+        
+        <div id = "div-tabla" class = "data">
+            <input type = "checkbox" id= "chk-id"> ID
+            <input type = "checkbox" id= "chk-modelo"> Modelo
+            <input type = "checkbox" id= "chk-anofabricacion"> Año fabricación
+            <input type = "checkbox" id= "chk-velmax"> Velocidad Max.
+            <input type = "checkbox" id= "chk-cantpuertas"> Cantidad Puertas
+            <input type = "checkbox" id= "chk-asientos"> Asientos
+            <input type = "checkbox" id= "chk-carga"> Carga
+            <input type = "checkbox" id= "chk-autonomia"> Autonomía
+
+
+            <table id = "tabla-vehiculos" border="2">
+
+                <thead> 
+                
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+
+            <button class = "boton" id = "btn-agregar-vehiculo">Agregar vehículo</button>
+        </div>
+        <div id= formABM class = "data">
+            <h1>Formulario ABM</h1>
+            <form id= "Agregar-atributos" >
+                <div>
+                    <div>
+                        <label for = "inputId">Id:</label>
+                        <input type = "number" id = "inputId" class = "elemento-abm" placeholder = "Digite su id..." required>
+                    </div>
+                    <div>
+                        Modelo:
+                        <input type = "text" id = "modeloInput" class = "elemento-abm" placeholder = "Digite su modelo..." required>
+                    </div>
+                    <div>
+                        Año de fabricación:
+                        <input type = "number" id = "anoFabricacionInput" class = "elemento-abm" placeholder = "Digite su año de fabric..." required>
+                    </div>
+                    <div>
+                        Velocidad máxima:
+                        <input type = "number" id = "velocidadMaxInput" class = "elemento-abm" placeholder = "Digite la velocidad Max..." >
+                    </div>
+                    <div>
+                        Tipo:
+                        <select id= "selectTipo" class = "elemento-abm" >
+                            <option value = "Auto">Auto</option>
+                            <option value = "Camion">Camion</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label id = "labelAtrTipo">Asientos:</label> 
+                        <input type = "number" id = "inputAtrTipo" class = "elemento-abm" placeholder = "" required>
+                    </div>
+                    <div>
+                        <label id = "labelAtrTipo2">Cant. de puertas:</label> 
+                        <input type = "number" id = "inputAtrTipo2" class = "elemento-abm" placeholder = "" required>
+                    </div>
+                </div>
+            </form>
+            <button  id = "enviarDatos" class = "boton" type = "submit" >Aceptar</button>
+            <button id = "eliminarVehiculo" class = "boton">Eliminar</button>
+            <button id = "cancelar" class = "boton" >Cancelar</button>
+        </div>
+    </main>
+    
+
+<script src = "main.js"></script>
+
+</body>
+</html>
